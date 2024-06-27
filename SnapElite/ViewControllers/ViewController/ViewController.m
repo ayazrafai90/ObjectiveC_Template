@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "SimpleAlertVC.h"
 #import "ConfirmationAlertVC.h"
+#import "SimpleAlertModel.h"
 
 @interface ViewController () <UIColorPickerViewControllerDelegate>
 
@@ -28,7 +29,10 @@
 
 - (IBAction)subscribeNowButtonTapped:(id)sender {
     
-    SimpleAlertVC *controller = [SimpleAlertVC shared];
+    SimpleAlertModel *model = [[SimpleAlertModel alloc]initWithTitle:@"Lorem ipsum"
+                                                         description:@"Lorem ipsum dolor sit amet consectetur. Turpis duis non consectetur mauris purus."
+                                                         buttonTitle:@"Got it"];
+    SimpleAlertVC *controller = [SimpleAlertVC sharedWith: model];
     controller.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     [self presentViewController:controller animated:NO completion:nil];
 }

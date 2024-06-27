@@ -69,4 +69,9 @@
     [self updateView];
 }
 
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
+    [self updateView];
+}
+
 @end

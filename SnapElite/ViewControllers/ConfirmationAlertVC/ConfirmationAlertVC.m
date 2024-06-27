@@ -6,8 +6,11 @@
 //
 
 #import "ConfirmationAlertVC.h"
+#import "UIView+AlertAnimation.h"
 
 @interface ConfirmationAlertVC ()
+
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
@@ -15,6 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [_contentView animateView];
 }
 
 + (ConfirmationAlertVC *)shared {

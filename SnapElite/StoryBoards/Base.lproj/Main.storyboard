@@ -459,6 +459,14 @@
                                         <state key="normal" title="Subscribe Now">
                                             <color key="titleColor" systemColor="linkColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backColor">
+                                                <color key="value" name="primaryLight"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" name="primaryDark"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="subscribeNowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aRG-ia-AlU"/>
                                         </connections>
@@ -471,6 +479,14 @@
                                         <state key="normal" title="Credit">
                                             <color key="titleColor" systemColor="linkColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" name="primaryLight"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                <color key="value" name="primaryLight"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="creditButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vnm-1V-u1K"/>
                                         </connections>
@@ -536,31 +552,31 @@
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSc-4L-kyo" customClass="SE_RoundedView">
-                                <rect key="frame" x="16" y="282" width="382" height="192"/>
+                                <rect key="frame" x="16" y="282.66666666666669" width="382" height="191"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="HvZ-hY-xnE">
-                                        <rect key="frame" x="24" y="24" width="334" height="144"/>
+                                        <rect key="frame" x="24" y="24" width="334" height="143"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jaD-dD-fv0">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Lorem ipsum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCz-oz-6C8">
-                                                        <rect key="frame" x="111" y="0.0" width="112.33333333333331" height="22"/>
-                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                                        <rect key="frame" x="110.33333333333334" y="0.0" width="113.66666666666666" height="22"/>
+                                                        <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
                                                         <color key="textColor" name="primaryLight"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Lorem ipsum dolor sit amet consectetur. Turpis duis non consectetur mauris purus." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOk-4p-pwz">
                                                         <rect key="frame" x="8" y="34" width="318" height="34"/>
                                                         <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
-                                                        <color key="textColor" name="grayText"/>
+                                                        <color key="textColor" name="alertTextLightGray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chC-hs-yPD" customClass="SE_FilledButton">
-                                                <rect key="frame" x="0.0" y="92" width="334" height="52"/>
-                                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="15"/>
+                                                <rect key="frame" x="0.0" y="92" width="334" height="51"/>
+                                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="15"/>
                                                 <color key="tintColor" name="primaryLight"/>
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                                                 <state key="normal" title="Got it">
@@ -570,6 +586,12 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="backColor">
+                                                        <color key="value" name="primaryLight"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="primaryDark"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="actionButtonTapped:" destination="wIr-Ds-qjO" eventType="touchUpInside" id="gak-mb-Pjl"/>
@@ -578,7 +600,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="cardBG"/>
+                                <color key="backgroundColor" name="alertBackground"/>
                                 <constraints>
                                     <constraint firstItem="HvZ-hY-xnE" firstAttribute="top" secondItem="nSc-4L-kyo" secondAttribute="top" constant="24" id="LWJ-hk-wv8"/>
                                     <constraint firstItem="HvZ-hY-xnE" firstAttribute="leading" secondItem="nSc-4L-kyo" secondAttribute="leading" constant="24" id="WZg-yg-VTA"/>
@@ -588,6 +610,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                        <color key="value" name="alertBackground"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -604,6 +629,12 @@
                             <constraint firstItem="3Z1-DX-vUj" firstAttribute="trailing" secondItem="WdL-mu-X0B" secondAttribute="trailing" id="vVP-ey-4c1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="chC-hs-yPD" id="AlT-nS-Zfx"/>
+                        <outlet property="contentView" destination="nSc-4L-kyo" id="JEP-OE-6mR"/>
+                        <outlet property="descriptionLabel" destination="GOk-4p-pwz" id="e7T-a6-98f"/>
+                        <outlet property="titleLabel" destination="MCz-oz-6C8" id="5bK-8Y-RcO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOk-yO-1rH" sceneMemberID="firstResponder"/>
             </objects>
@@ -641,37 +672,37 @@
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yh-Sn-UQv" customClass="SE_RoundedView">
-                                <rect key="frame" x="16" y="239.99999999999997" width="382" height="276.33333333333326"/>
+                                <rect key="frame" x="16" y="238.99999999999997" width="382" height="278.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-1i-ITh">
-                                        <rect key="frame" x="24" y="24.000000000000014" width="334" height="228.33333333333337"/>
+                                        <rect key="frame" x="24" y="24.000000000000014" width="334" height="230.33333333333337"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t0I-no-Xtr">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="152.33333333333334"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="t0I-no-Xtr">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="155.33333333333334"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_setting" translatesAutoresizingMaskIntoConstraints="NO" id="ge1-j6-BUT">
                                                         <rect key="frame" x="0.0" y="0.0" width="35.333333333333336" height="35.333333333333336"/>
                                                         <color key="tintColor" name="primaryLight"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Daj-By-VLL">
-                                                        <rect key="frame" x="0.0" y="55.333333333333314" width="311.66666666666669" height="97"/>
+                                                        <rect key="frame" x="0.0" y="59.333333333333314" width="311.66666666666669" height="96"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Lorem ipsum" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-lV-l7D">
-                                                                <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="22"/>
-                                                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="113.66666666666667" height="22"/>
+                                                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
                                                                 <color key="textColor" name="primaryLight"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="You have not the permission to read or modify this file." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkN-HS-S6f">
                                                                 <rect key="frame" x="0.0" y="34" width="311.66666666666669" height="34"/>
                                                                 <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
-                                                                <color key="textColor" name="grayText"/>
+                                                                <color key="textColor" name="alertTextLightGray"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Lorem ipsum dolor sit amet consectetur" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLX-zm-cKw">
-                                                                <rect key="frame" x="0.0" y="80" width="266.33333333333331" height="17"/>
-                                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
-                                                                <color key="textColor" name="grayText"/>
+                                                                <rect key="frame" x="0.0" y="80" width="244.33333333333334" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="13"/>
+                                                                <color key="textColor" name="alertTextDarkGray"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -679,11 +710,11 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u2m-8F-9Ff">
-                                                <rect key="frame" x="0.0" y="176.33333333333331" width="334" height="52"/>
+                                                <rect key="frame" x="0.0" y="179.33333333333331" width="334" height="51"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58k-uX-d8i" customClass="SE_BorderButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="52"/>
-                                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="15"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="51"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="15"/>
                                                         <color key="tintColor" name="primaryLight"/>
                                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                                                         <state key="normal" title="Cancel">
@@ -693,14 +724,17 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="8"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="primaryLight"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="cancelButtonTapped:" destination="2oa-yr-7gD" eventType="touchUpInside" id="jT8-dw-B3w"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5z-iG-8qZ" customClass="SE_FilledButton">
-                                                        <rect key="frame" x="171" y="0.0" width="163" height="52"/>
-                                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="15"/>
+                                                        <rect key="frame" x="171" y="0.0" width="163" height="51"/>
+                                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="15"/>
                                                         <color key="tintColor" name="primaryLight"/>
                                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                                                         <state key="normal" title="Got it">
@@ -709,6 +743,12 @@
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backColor">
+                                                                <color key="value" name="primaryLight"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                <color key="value" name="primaryDark"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
@@ -720,7 +760,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="cardBG"/>
+                                <color key="backgroundColor" name="alertBackground"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="mjB-1i-ITh" secondAttribute="trailing" constant="24" id="OGY-9I-QlP"/>
                                     <constraint firstItem="mjB-1i-ITh" firstAttribute="top" secondItem="7yh-Sn-UQv" secondAttribute="top" constant="24" id="lPH-hy-nsi"/>
@@ -730,6 +770,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                        <color key="value" name="alertBackground"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -746,6 +789,9 @@
                             <constraint firstItem="dY0-QN-jrO" firstAttribute="leading" secondItem="nOC-Hn-TjN" secondAttribute="leading" id="sn7-wY-1dy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="7yh-Sn-UQv" id="mef-ve-UlI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5D-yX-fwo" sceneMemberID="firstResponder"/>
             </objects>
@@ -757,25 +803,34 @@
             <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="58k-uX-d8i">
-            <size key="intrinsicContentSize" width="47" height="52"/>
+            <size key="intrinsicContentSize" width="51" height="51"/>
         </designable>
         <designable name="TPz-df-UUa">
             <size key="intrinsicContentSize" width="109" height="51"/>
         </designable>
         <designable name="chC-hs-yPD">
-            <size key="intrinsicContentSize" width="38" height="52"/>
+            <size key="intrinsicContentSize" width="40" height="51"/>
         </designable>
         <designable name="jPi-yp-xZ3">
             <size key="intrinsicContentSize" width="69" height="35"/>
         </designable>
         <designable name="z5z-iG-8qZ">
-            <size key="intrinsicContentSize" width="38" height="52"/>
+            <size key="intrinsicContentSize" width="40" height="51"/>
         </designable>
     </designables>
     <resources>
         <image name="ic_back" width="28" height="28.333333969116211"/>
         <image name="ic_logo" width="128.66667175292969" height="31.666666030883789"/>
         <image name="ic_setting" width="35.333332061767578" height="35.333332061767578"/>
+        <namedColor name="alertBackground">
+            <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="alertTextDarkGray">
+            <color red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="alertTextLightGray">
+            <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="cardBG">
             <color red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -792,10 +847,10 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -6,12 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimpleAlertModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SimpleAlertVC : UIViewController
 
-+ (SimpleAlertVC *)shared;
++ (SimpleAlertVC *)sharedWith:(SimpleAlertModel *)model;
 
 @end
 
