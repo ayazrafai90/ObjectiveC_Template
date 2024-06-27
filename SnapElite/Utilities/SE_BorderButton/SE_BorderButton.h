@@ -15,6 +15,7 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
+@property (nonatomic, strong) IBInspectable UIColor *textColor;
 
 @end
 

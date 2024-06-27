@@ -11,6 +11,8 @@
 		D70C52CF2C2D2B9C0038D522 /* SE_BorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D70C52CE2C2D2B9C0038D522 /* SE_BorderButton.m */; };
 		D70C52D22C2D2CC80038D522 /* SE_FilledButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D70C52D12C2D2CC80038D522 /* SE_FilledButton.m */; };
 		D70C52D62C2D2DBC0038D522 /* SE_UnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D70C52D52C2D2DBC0038D522 /* SE_UnderlineButton.m */; };
+		D7EA118A2C2D361500CA5AA5 /* SimpleAlertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EA11892C2D361500CA5AA5 /* SimpleAlertVC.m */; };
+		D7EA118E2C2D3B5B00CA5AA5 /* ConfirmationAlertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EA118D2C2D3B5B00CA5AA5 /* ConfirmationAlertVC.m */; };
 		D7ED30F92C2D21EA00672607 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ED30F82C2D21EA00672607 /* AppDelegate.m */; };
 		D7ED30FC2C2D21EA00672607 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ED30FB2C2D21EA00672607 /* SceneDelegate.m */; };
 		D7ED30FF2C2D21EA00672607 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ED30FE2C2D21EA00672607 /* ViewController.m */; };
@@ -33,6 +35,10 @@
 		D70C52D12C2D2CC80038D522 /* SE_FilledButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SE_FilledButton.m; sourceTree = "<group>"; };
 		D70C52D42C2D2DBC0038D522 /* SE_UnderlineButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SE_UnderlineButton.h; sourceTree = "<group>"; };
 		D70C52D52C2D2DBC0038D522 /* SE_UnderlineButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SE_UnderlineButton.m; sourceTree = "<group>"; };
+		D7EA11882C2D361500CA5AA5 /* SimpleAlertVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleAlertVC.h; sourceTree = "<group>"; };
+		D7EA11892C2D361500CA5AA5 /* SimpleAlertVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleAlertVC.m; sourceTree = "<group>"; };
+		D7EA118C2C2D3B5B00CA5AA5 /* ConfirmationAlertVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfirmationAlertVC.h; sourceTree = "<group>"; };
+		D7EA118D2C2D3B5B00CA5AA5 /* ConfirmationAlertVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfirmationAlertVC.m; sourceTree = "<group>"; };
 		D7ED30F42C2D21EA00672607 /* SnapElite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapElite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7ED30F72C2D21EA00672607 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7ED30F82C2D21EA00672607 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +115,33 @@
 			path = SE_UnderlineButton;
 			sourceTree = "<group>";
 		};
+		D7EA11862C2D360000CA5AA5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7ED30FD2C2D21EA00672607 /* ViewController.h */,
+				D7ED30FE2C2D21EA00672607 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D7EA11872C2D360400CA5AA5 /* SimpleAlertVC */ = {
+			isa = PBXGroup;
+			children = (
+				D7EA11882C2D361500CA5AA5 /* SimpleAlertVC.h */,
+				D7EA11892C2D361500CA5AA5 /* SimpleAlertVC.m */,
+			);
+			path = SimpleAlertVC;
+			sourceTree = "<group>";
+		};
+		D7EA118B2C2D3B4D00CA5AA5 /* ConfirmationAlertVC */ = {
+			isa = PBXGroup;
+			children = (
+				D7EA118C2C2D3B5B00CA5AA5 /* ConfirmationAlertVC.h */,
+				D7EA118D2C2D3B5B00CA5AA5 /* ConfirmationAlertVC.m */,
+			);
+			path = ConfirmationAlertVC;
+			sourceTree = "<group>";
+		};
 		D7ED30EB2C2D21EA00672607 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +186,9 @@
 		D7ED31112C2D221900672607 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D7ED30FD2C2D21EA00672607 /* ViewController.h */,
-				D7ED30FE2C2D21EA00672607 /* ViewController.m */,
+				D7EA118B2C2D3B4D00CA5AA5 /* ConfirmationAlertVC */,
+				D7EA11872C2D360400CA5AA5 /* SimpleAlertVC */,
+				D7EA11862C2D360000CA5AA5 /* ViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -272,9 +306,11 @@
 			files = (
 				D70C52D62C2D2DBC0038D522 /* SE_UnderlineButton.m in Sources */,
 				D70C52D22C2D2CC80038D522 /* SE_FilledButton.m in Sources */,
+				D7EA118A2C2D361500CA5AA5 /* SimpleAlertVC.m in Sources */,
 				D7ED30FF2C2D21EA00672607 /* ViewController.m in Sources */,
 				D70C52CF2C2D2B9C0038D522 /* SE_BorderButton.m in Sources */,
 				D70C52C92C2D274B0038D522 /* SE_RoundedView.m in Sources */,
+				D7EA118E2C2D3B5B00CA5AA5 /* ConfirmationAlertVC.m in Sources */,
 				D7ED30F92C2D21EA00672607 /* AppDelegate.m in Sources */,
 				D7ED310A2C2D21EB00672607 /* main.m in Sources */,
 				D7ED30FC2C2D21EA00672607 /* SceneDelegate.m in Sources */,
