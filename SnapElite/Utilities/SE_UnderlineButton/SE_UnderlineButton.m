@@ -28,7 +28,6 @@
 
 - (void)commonInit {
     
-    if (_lineWidth == 0) { _lineWidth = 1.0; }
     if (!_textColor) { _textColor = [UIColor colorNamed:@"primaryLight"]; }
     if (!_underlineColor) { _underlineColor = [UIColor colorNamed:@"primaryLight"]; }
     
@@ -51,22 +50,16 @@
     
     // Set the attributed title for the button
     [self setAttributedTitle:attributedTitle forState:UIControlStateNormal];
-    
-    // To set border size, you can add an underline using a layer
-//    CGSize size = self.frame.size;
-//    CALayer *underline = [CALayer layer];
-//    underline.backgroundColor = [UIColor blueColor].CGColor;
-//    underline.frame = CGRectMake(0, size.height - 2, size.width, 2); // Adjust height as needed
 }
 
 // Override setters to update the view when properties change
-- (void)setLineWidth:(CGFloat)lineWidth {
-    _lineWidth = lineWidth;
+- (void)setTextColor:(UIColor *)textColor {
+    _textColor = textColor;
     [self updateView];
 }
 
-- (void)setTextColor:(UIColor *)textColor {
-    _textColor = textColor;
+- (void)setUnderlineColor:(UIColor *)underlineColor {
+    _underlineColor = underlineColor;
     [self updateView];
 }
 

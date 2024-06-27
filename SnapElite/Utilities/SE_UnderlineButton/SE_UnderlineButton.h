@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
 @interface SE_UnderlineButton : UIButton
 
-@property (nonatomic, assign) IBInspectable CGFloat lineWidth;
 @property (nonatomic, strong) IBInspectable UIColor *textColor;
 @property (nonatomic, strong) IBInspectable UIColor *underlineColor;
 
