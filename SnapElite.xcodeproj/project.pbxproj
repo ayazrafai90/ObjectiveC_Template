@@ -214,9 +214,9 @@
 		D7ED31112C2D221900672607 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D7EA118B2C2D3B4D00CA5AA5 /* ConfirmationAlertVC */,
-				D7EA11872C2D360400CA5AA5 /* SimpleAlertVC */,
 				D7EA11862C2D360000CA5AA5 /* ViewController */,
+				D7EA11872C2D360400CA5AA5 /* SimpleAlertVC */,
+				D7EA118B2C2D3B4D00CA5AA5 /* ConfirmationAlertVC */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

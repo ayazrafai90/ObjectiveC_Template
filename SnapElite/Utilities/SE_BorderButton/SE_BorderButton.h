@@ -16,6 +16,9 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
 @property (nonatomic, strong) IBInspectable UIColor *textColor;
+@property (nonatomic, strong) IBInspectable UIColor *hoverTextColor;
+@property (nonatomic, strong) IBInspectable UIColor *defaultBackgroundColor;
+@property (nonatomic, strong) IBInspectable UIColor *hoverColor;
 
 @end
 
